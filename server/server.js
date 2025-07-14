@@ -11,6 +11,12 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+
+// ✅ Root Route
+app.get('/', (req, res) => {
+  res.send('Server is running successfully ✅');
+});
+
 // Connect DB
 connectDB();
 
