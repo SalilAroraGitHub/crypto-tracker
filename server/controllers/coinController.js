@@ -24,8 +24,9 @@ export const getCoins = async (req, res) => {
 
     res.json(formatted);
   } catch (err) {
-    res.status(500).json({ error: 'Failed to fetch coins' });
-  }
+  console.error('Error fetching from CoinGecko API:', err.message);
+  res.status(500).json({ error: 'Failed to fetch coins', details: err.message });
+}
 };
 
 export const postHistory = async (req, res) => {
