@@ -26,3 +26,13 @@ git clone https://github.com/SalilAroraGitHub/crypto-tracker.git
 cd crypto-tracker/client
 npm install
 npm start
+
+
+## Setup Instructions
+
+### Backend Setup
+
+1. Install dependencies
+npm install
+nodemon server.js
+
